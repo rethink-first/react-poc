@@ -1,4 +1,4 @@
-# React + Browserify + Babel = Future
+# based on: React + Browserify + Babel = Future
 
 I wanted to get familiar with React while also continuing to use browserify. Also, ES6 seems cool. So, I took the [official React tutorial](https://facebook.github.io/react/docs/tutorial.html) and wrote it as CommonJS modules and added some ES6 sugar where appropriate.
 
