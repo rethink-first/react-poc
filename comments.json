@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Insala",
+        "slug": "insala",
+        "imageUrl": "c/1462993342213-insala.PNG",
+        "domains": [
+            "insala.com",
+            "swiss-re.com"
+        ],
+        "verifyEmail": true,
+        "sections": [
+            "yoga",
+            "mindfulness",
+            "grow",
+            "search-inside-yourself"
+        ],
+        "adminEmail": "salima@whil.com",
+        "cap": 100,
+        "termsAndConditions": true,
+        "endDate": "2017-06-01"
+    },
+    {
+        "name": "qwe",
+        "slug": "wer",
+        "imageUrl": "dfg",
+        "domains": [
+            ""
+        ],
+        "verifyEmail": "",
+        "sections": [
+            ""
+        ],
+        "adminEmail": "",
+        "cap": "",
+        "termsAndConditions": "",
+        "endDate": ""
+    },
+    {
+        "name": "123",
+        "slug": "123",
+        "imageUrl": "123",
+        "domains": [
+            ""
+        ],
+        "verifyEmail": "",
+        "sections": [
+            ""
+        ],
+        "adminEmail": "",
+        "cap": "",
+        "termsAndConditions": "",
+        "endDate": ""
+    },
+    {
+        "name": "456",
+        "slug": "456",
+        "imageUrl": "456",
+        "domains": [
+            ""
+        ],
+        "verifyEmail": "",
+        "sections": [
+            ""
+        ],
+        "adminEmail": "",
+        "cap": "",
+        "termsAndConditions": "",
+        "endDate": ""
+    },
+    {
+        "name": "ghj",
+        "slug": "ghj",
+        "imageUrl": "ghj",
+        "domains": [
+            "ghj"
+        ],
+        "verifyEmail": "ghj",
+        "sections": [
+            "ghj"
+        ],
+        "adminEmail": "ghj",
+        "cap": "ghj",
+        "termsAndConditions": "ghj",
+        "endDate": "ghj"
+    }
+]
