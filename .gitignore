@@ -1,3 +1,8 @@
 node_modules
 *.log
 .idea/
+.idea/workspace.xml
+
+components/team-input-form.js
+
+.idea/workspace.xml
