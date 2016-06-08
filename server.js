@@ -58,21 +58,22 @@ app.get('/team', function (req, res, next) {
 });
 
 function massage(body){
+    var dt = new Date(body.endDate);
     var out = {
         "name": body.name,
         "slug": body.slug,
         "imageUrl": body.imageUrl,
         "domains": String(body.domains).split(","),
-        "verifyEmail": body.verifyEmail === "true" ? true:false,
+        "verifyEmail": body.verifyEmail === "true" ? true : false,
         "sections": String(body.sections).split(","),
         "adminEmail": body.adminEmail,
-        "cap": parseInt(body.cap,10),
-        "termsAndConditions": body.termsAndConditions === "true" ? true:false,
-        "endDate": body.endDate
-    };
+        "cap": parseInt(body.cap, 10),
+        "termsAndConditions": body.termsAndConditions === "true" ? true : false,
+        "endDate": dt.toJSON().split("T")[0]
+    }
     return out;
-
 }
+
 app.post('/team', function(req, res, next) {
     var team = massage(req.body);
   request
