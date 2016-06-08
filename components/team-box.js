@@ -14,16 +14,18 @@ export default class TeamBox extends Component {
             teamResult: {},
             newTeam: {},
             resultStatus: "",
-            data: []}
+            data: []
+        }
     }
 
-    loadTeam(id){
+    loadTeam(id) {
 
-            fetch("http://api.whil.blue/team/" + id + "/profile/public")
-                .then(response => response.json())
-                .then(data => this.setState({newTeam: data}))
-                .catch(err => console.error(this.props.url, err.toString()))
+        fetch("http://api.whil.blue/team/" + id + "/profile/public")
+            .then(response => response.json())
+            .then(data => this.setState({newTeam: data}))
+            .catch(err => console.error(this.props.url, err.toString()))
     }
+
     loadTeams() {
         fetch(this.props.url)
             .then(response => response.json())
@@ -46,25 +48,28 @@ export default class TeamBox extends Component {
             .then(data => this.parseSubmit(data))
             .catch(err => this.parseErr(err))
     }
-    parseErr(err){
+
+    parseErr(err) {
         console.error(this.props.url, err.toString())
     }
-    parseResponse(response){
+
+    parseResponse(response) {
         return response.json();
     }
-    parseSubmit(result){
+
+    parseSubmit(result) {
         //parse the result
         //error message
         //ack
-        if(result.error){
+        if (result.error) {
             this.setState({
                 teamResult: {
-                    error:result.error,
+                    error: result.error,
                     errorCode: result.errorCode
                 },
                 resultStatus: "error"
             });
-        } else if (result.team){
+        } else if (result.team) {
             this.setState({
                 teamResult: result,
                 resultStatus: "success"
@@ -72,13 +77,17 @@ export default class TeamBox extends Component {
 
         }
     }
+
     render() {
         return (
             <div className='team-box'>
-                <h1>Add team</h1>
+                <header className="whil-header">
+                    <div className="logo"></div>
+                    <h1>Add team</h1>
+                </header>
                 <TeamForm onTeamSubmit={this.handleTeamSubmit}/>
-                <hr/>
-                <TeamResult data={this.state.teamResult} ack={this.state.resultStatus}/>
+                <hr/> 
+                 <TeamResult data={this.state.teamResult} ack={this.state.resultStatus}/>
             </div>
         )
     }

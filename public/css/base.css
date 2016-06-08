@@ -1,62 +1,133 @@
+.whil-header {
+    z-index: 990;
+    top: 0;
+    left: 10px;
+    right: 0;
+    margin: 0 auto;
+    background: #fff;
+    height: 80px;
+    position: fixed;
+    border-bottom: 1px solid #ddd;
+}
+
+.whil-header .logo {
+    background: transparent url(https://d27gd7ic37ats7.cloudfront.net/images/marketing/whil.png) center center no-repeat;
+    background-size: 88px;
+    cursor: pointer;
+    height: 79px;
+    width: 79px;
+    float: left;
+    clear: none
+}
+
+.whil-header h1 {
+    margin-left: 120px;
+    margin-top: 8px;
+    color: #475d6f;
+}
+.team-box hr {
+    clear: both;
+    margin-top: 60px;
+}
+.team-form {
+    font-size: 21px;
+    margin-top: 79px;
+    width: 376px;
+}
+.team-form input {
+    float:right;
+    margin-top: 9px;
+}
+.team-form .team-submit {
+    width: 120px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00bade;
+    background-color: rgba(0, 186, 222, 0.298039);
+    border-radius: 40px;
+    border: 3px solid #00bade;
+    float:left;
+}
+.team-result {
+    background-color: #d8d8d8;
+    min-height: 400px;
+    font-size: 21px;
+    max-width: 460px;
+}
+.team-box .team-result hr {
+    margin-top: 0;
+}
+.team-result .result {
+    width: 200px;
+    background-color: #dbdbdb;
+    float: right;
+    font-style: italic;
+}
+.team-error {
+    color: red;
+    font-size: 21px;
+    background-color: #efefef;
+    border-bottom: 2px dashed #00bade;
+}
 body {
-  background: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-  margin: 0;
-  padding: 30px;
+    color: #475d6f;
+    background: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 30px;
 }
 
 a {
-  color: #4183c4;
-  text-decoration: none;
+    color: #4183c4;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 code {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
-  font-size: 12px;
-  margin: 0 2px;
-  padding: 0px 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+    font-size: 12px;
+    margin: 0 2px;
+    padding: 0px 5px;
 }
 
 h1, h2, h3, h4 {
-  font-weight: bold;
-  margin: 0 0 15px;
-  padding: 0;
+    font-weight: bold;
+    margin: 0 0 15px;
+    padding: 0;
 }
 
 h1 {
-  border-bottom: 1px solid #ddd;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin: 0 0 15px;
-  padding: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0 0 15px;
+    padding: 0;
 }
 
 h2 {
-  border-bottom: 1px solid #eee;
-  font-size: 2em;
+    border-bottom: 1px solid #eee;
+    font-size: 2em;
 }
 
 h3 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 h4 {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 p, ul {
-  margin: 15px 0;
+    margin: 15px 0;
 }
 
 ul {
-  padding-left: 30px;
+    padding-left: 30px;
 }

@@ -9,21 +9,10 @@ function processProps(props){
 }
 // stateless component
 const TeamResult = (props) => {
-    // if(props.ack){
-    //     let result = processProps(props);
-    //     return (
-    //         <div className='team'>
-    //             <div className='team-name'>{result.name}</div>
-    //             <div className='team-image'>{result.imageUrl}</div>
-    //             <div className='team-id'>{result.teamId}</div>
-    //         </div>
-    //     )
-    // }else{
-    // }
     switch (props.ack) {
         case "error":
             return (
-                <div className='team'>
+                <div className='team-result '>
                     <div className='team-error'>{props.data.error}</div>
                 </div>
             )
@@ -32,12 +21,13 @@ const TeamResult = (props) => {
             let n = dt.toJSON();
             let api = "http://api.whil.blue/team/" + props.data.team.teamId +"/profile/public";
             return (
-                <div className='team'>
-                    <div>SUCCESS</div>
-                    <div>Team Name: {props.data.team.name}</div>
-                    <div>Team Slug: {props.data.team.slug}</div>
-                    <div>Image URL: {props.data.team.imageUrl}</div>
-                    <div>Id: {props.data.team.teamId}</div>
+                <div className='team-result'>
+                    <h4>SUCCESS</h4> 
+                    <hr/>
+                    <div>Team Name:&nbsp;<span className="result">{props.data.team.name}</span></div>
+                    <div>Team Slug:&nbsp;<span className="result">{props.data.team.slug}</span></div>
+                    <div>Image URL:&nbsp;<span className="result"> {props.data.team.imageUrl}</span></div>
+                    <div>Id: &nbsp;<span className="result">{props.data.team.teamId}</span></div>
                     <div>View raw data from api: <br/>
                         <a href={api}>{api}</a>
                     </div>
@@ -46,8 +36,8 @@ const TeamResult = (props) => {
 
         default:
             return (
-                <div className='team'>
-                    <div className='team-error'>BUDGUEß</div>
+                <div className='team-result'>
+                    <div >waiting...</div>
                 </div>
             )
 
